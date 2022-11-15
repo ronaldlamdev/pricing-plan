@@ -1,3 +1,16 @@
+/* Google Font: Montserrat (Font weight 700) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%) */
+/* Body font size: 15px */
+
+:root {
+  --veryLightGrayishBlue: #f6f6fe;
+  --lightGrayishBlue: #b3b5c6;
+  --grayishBlue: #6d708d;
+  --darkGrayishBlue: #494c5f;
+}
