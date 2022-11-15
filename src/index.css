@@ -14,3 +14,10 @@
   --grayishBlue: #6d708d;
   --darkGrayishBlue: #494c5f;
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('./assets/images/bg-top.svg') no-repeat;
+  background-size: cover;
+  background-position: 195px -50px;
+}
