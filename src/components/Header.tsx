@@ -1,15 +1,15 @@
 
 const Header = () => {
   return (
-    <header>
-      <h1>Our Pricing</h1>
-      <div>
-        <span>Annually</span>
+    <header className="px-4 py-12 w-full flex flex-col justify-center items-center">
+      <h1 className="text-[#6d708d] text-3xl">Our Pricing</h1>
+      <div className="w-full mt-12 flex justify-between items-center px-10">
+        <span className="text-[#b3b5c6]">Annually</span>
         <label className="relative inline-block w-[3.75rem] h-[2.125rem]">
           <input type="checkbox" className="opacity-0" />
-          <span className="slider round"></span>
+          <span className="slider"></span>
         </label>
-        <span>Monthly</span>
+        <span className="text-[#b3b5c6]">Monthly</span>
       </div>
     </header>
   )
