@@ -1,4 +1,3 @@
-
 const Header = () => {
   return (
     <header className="px-4 py-12 w-full flex flex-col justify-center items-center">
