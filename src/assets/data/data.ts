@@ -7,7 +7,8 @@ export const data = [
     },
     storageSize: '500 GB Storage',
     usersAllowed: '2 Users Allowed',
-    maxSendSize: 'Send up to 3 GB'
+    maxSendSize: 'Send up to 3 GB',
+    cssStyles: ''
   },
   {
     planName: 'Professional',
@@ -17,7 +18,8 @@ export const data = [
     },
     storageSize: '1 TB Storage',
     usersAllowed: '5 Users Allowed',
-    maxSendSize: 'Send up to 10 GB'
+    maxSendSize: 'Send up to 10 GB',
+    cssStyles: ''
   },
   {
     planName: 'Master',
@@ -27,6 +29,7 @@ export const data = [
     },
     storageSize: '2 TB Storage',
     usersAllowed: '10 Users Allowed',
-    maxSendSize: 'Send up to 20 GB'
+    maxSendSize: 'Send up to 20 GB',
+    cssStyles: ''
   }
 ]
