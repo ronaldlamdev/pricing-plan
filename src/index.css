@@ -19,6 +19,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background: url('./assets/images/bg-top.svg') no-repeat;
+  background-color: #f6f6fe;
   background-size: cover;
   background-position: 195px -50px;
 }

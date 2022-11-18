@@ -7,9 +7,9 @@ const Card = () => {
   const master = data[2]
 
   return (
-    <div>
+    <div className="w-full h-[400px] px-4">
 
-      <div>
+      <div className="">
         <h1>{basic.planName}</h1>
         <h1>{basic.price.annual}</h1>
       </div>
