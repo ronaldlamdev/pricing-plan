@@ -47,7 +47,7 @@ input:checked + .slider:before {
 .light-card {
   @apply w-full max-w-[375px] h-[450px] 
   flex flex-col text-center items-center 
-  shadow-lg rounded-xl bg-white
+  shadow-lg rounded-xl bg-white mb-6
 }
 
 .light-card-button {
