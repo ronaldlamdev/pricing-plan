@@ -45,7 +45,16 @@ input:checked + .slider:before {
 /* Card components */
 
 .light-card {
+  @apply w-full max-w-[375px] h-[450px] 
+  flex flex-col text-center items-center 
+  shadow-lg rounded-xl bg-white
+}
 
+.light-card-button {
+  @apply bg-gradient-to-r
+  from-[#a3a8f0] to-[#696fdd]
+  text-white w-full max-w-[270px] 
+  p-3 rounded-lg
 }
 
 .dark-component {
