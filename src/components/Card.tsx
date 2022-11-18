@@ -7,7 +7,7 @@ const Card = () => {
   const master = data[2]
 
   return (
-    <div className="w-full h-[400px] px-4">
+    <div className="w-full h-[400px] bg-white">
 
       <div className="">
         <h1>{basic.planName}</h1>

@@ -1,11 +1,11 @@
 import Header from './components/Header'
-import Card from './components/Card'
+import Main from './components/Main'
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Card />
+      <Main />
     </div>
   )
 }
