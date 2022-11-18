@@ -42,12 +42,24 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Card components */
+/* Light card component */
 
 .light-card {
   @apply w-full max-w-[375px] h-[450px] 
   flex flex-col text-center items-center 
   shadow-lg rounded-xl bg-white mb-6
+}
+
+.light-card-name {
+  @apply text-[#6d708d] text-lg mb-5
+}
+
+.light-card-price {
+  @apply text-6xl text-[#494c5f] flex items-center
+}
+
+.light-card-details {
+  @apply text-[#6d708d] text-lg py-4 w-full px-12
 }
 
 .light-card-button {
@@ -57,6 +69,28 @@ input:checked + .slider:before {
   p-3 rounded-lg
 }
 
-.dark-component {
-  
+/* Dark card component */
+
+.dark-card {
+  @apply w-full max-w-[375px] h-[450px] 
+  flex flex-col text-center items-center 
+  shadow-lg rounded-xl bg-gradient-to-r
+  from-[#a3a8f0] to-[#696fdd] mb-6
+}
+
+.dark-card-name {
+  @apply text-white text-lg mb-5
+}
+
+.dark-card-price {
+  @apply text-6xl text-white flex items-center
+}
+
+.dark-card-details {
+  @apply text-white text-lg py-4 w-full px-12
+}
+
+.dark-card-button {
+  @apply bg-white text-[#696fdd] w-full 
+  max-w-[270px] p-3 rounded-lg
 }

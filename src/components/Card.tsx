@@ -3,20 +3,25 @@ interface dataProp {
   price: string,
   size: string,
   users: string,
-  maxSize: string
+  maxSize: string,
+  cardStyle: string,
+  nameStyle: string,
+  priceStyle: string,
+  detailsStyle: string,
+  buttonStyle: string
 }
 
-const Card = ({name, price, size, users, maxSize}: dataProp) => {
+const Card = ({name, price, size, users, maxSize, cardStyle, nameStyle, priceStyle, detailsStyle, buttonStyle}: dataProp) => {
 
   return (
-    <div className="light-card">
+    <div className={cardStyle}>
 
       <div className="pt-5 pb-6">
-        <h1 className="text-[#6d708d] text-lg mb-5">{name}</h1>
-        <h1 className="text-6xl text-[#494c5f] flex items-center"><span className="text-4xl">$</span>{price}</h1>
+        <h1 className={nameStyle}>{name}</h1>
+        <h1 className={priceStyle}><span className="text-4xl">$</span>{price}</h1>
       </div>
 
-      <div className="text-[#6d708d] text-lg py-4 w-full px-12">
+      <div className={detailsStyle}>
         <div className="py-4 border-y flex flex-col justify-center">
           <h2>{size}</h2>
         </div>
@@ -28,7 +33,7 @@ const Card = ({name, price, size, users, maxSize}: dataProp) => {
         </div>
       </div>
 
-      <button className='light-card-button'>Learn More</button>
+      <button className={buttonStyle}>Learn More</button>
     </div>
   )
 }
