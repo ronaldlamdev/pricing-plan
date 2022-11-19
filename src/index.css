@@ -45,7 +45,7 @@ input:checked + .slider:before {
 /* Light card component */
 
 .light-card {
-  @apply w-full max-w-[375px] h-[450px] 
+  @apply w-full max-w-[375px] h-[500px] 
   flex flex-col text-center items-center 
   shadow-lg rounded-xl bg-white mb-6
 }
@@ -66,13 +66,13 @@ input:checked + .slider:before {
   @apply bg-gradient-to-r
   from-[#a3a8f0] to-[#696fdd]
   text-white w-full max-w-[270px] 
-  p-3 rounded-lg
+  p-5 rounded-lg my-8
 }
 
 /* Dark card component */
 
 .dark-card {
-  @apply w-full max-w-[375px] h-[450px] 
+  @apply w-full max-w-[375px] h-[500px] 
   flex flex-col text-center items-center 
   shadow-lg rounded-xl bg-gradient-to-r
   from-[#a3a8f0] to-[#696fdd] mb-6
@@ -92,5 +92,5 @@ input:checked + .slider:before {
 
 .dark-card-button {
   @apply bg-white text-[#696fdd] w-full 
-  max-w-[270px] p-3 rounded-lg
+  max-w-[270px] p-5 rounded-lg my-8
 }
