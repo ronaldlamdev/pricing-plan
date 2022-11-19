@@ -27,14 +27,14 @@ body {
 /* The slider */
 .slider {
 
-  @apply absolute top-0 left-0 right-0
-  bottom-0 duration-300 bg-gradient-to-r
+  @apply absolute top-0 left-0 right-0 bottom-0 
+  duration-300 bg-gradient-to-r cursor-pointer
   from-[#a3a8f0] to-[#696fdd] rounded-[2.125rem]
 }
 
 .slider:before {
   content: '';
-  @apply h-[1.625rem] w-[1.625rem] bg-white 
+  @apply h-[1.625rem] w-[1.625rem] bg-white cursor-pointer
   left-1 absolute bottom-1 duration-300 rounded-full
 }
 
@@ -65,8 +65,10 @@ input:checked + .slider:before {
 .light-card-button {
   @apply bg-gradient-to-r
   from-[#a3a8f0] to-[#696fdd]
-  text-white w-full max-w-[270px] 
-  p-5 rounded-lg my-8
+  text-white w-full border max-w-[270px] 
+  p-5 rounded-lg my-8 hover:text-[#696fdd]
+  hover:from-white hover:to-white
+  hover:border-[#696fdd]
 }
 
 /* Dark card component */
@@ -91,6 +93,8 @@ input:checked + .slider:before {
 }
 
 .dark-card-button {
-  @apply bg-white text-[#696fdd] w-full 
-  max-w-[270px] p-5 rounded-lg my-8
+  @apply bg-white border text-[#696fdd] w-full 
+  max-w-[270px] p-5 rounded-lg my-8 hover:bg-gradient-to-r
+  hover:from-[#a3a8f0] hover:to-[#696fdd]
+  hover:text-white
 }

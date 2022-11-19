@@ -4,8 +4,9 @@ import { data } from '../assets/data/data';
 const Main = () => {
   return (
     <main className="px-4 py-8 flex flex-col items-center">
-      {data.map((plan) => (
-        <Card name={plan.name}
+      {data.map((plan, index) => (
+        <Card key={index}
+              name={plan.name}
               price={plan.price.annual}
               size={plan.storageSize}
               users={plan.usersAllowed}
