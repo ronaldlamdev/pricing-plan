@@ -30,6 +30,7 @@ body {
   @apply absolute top-0 left-0 right-0 bottom-0 
   duration-300 bg-gradient-to-r cursor-pointer
   from-[#a3a8f0] to-[#696fdd] rounded-[2.125rem]
+  hover:opacity-70
 }
 
 .slider:before {
