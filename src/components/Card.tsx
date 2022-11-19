@@ -16,7 +16,7 @@ const Card = ({name, price, size, users, maxSize, cardStyle, nameStyle, priceSty
   return (
     <div className={cardStyle}>
 
-      <div className="pt-5 pb-6">
+      <div className="pt-5 pb-6 lg:pt-12">
         <h1 className={nameStyle}>{name}</h1>
         <h1 className={priceStyle}><span className="text-4xl">$</span>{price}</h1>
       </div>

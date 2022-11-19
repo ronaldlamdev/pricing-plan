@@ -3,7 +3,7 @@ import { data } from '../assets/data/data';
 
 const Main = () => {
   return (
-    <main className="px-4 py-8 flex flex-col items-center lg:flex-row lg:justify-center lg:mt-12">
+    <main className="px-4 py-8 flex flex-col items-center lg:flex-row lg:justify-center lg:mt-8">
       {data.map((plan, index) => (
         <Card key={index}
               name={plan.name}
