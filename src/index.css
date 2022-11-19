@@ -49,6 +49,7 @@ input:checked + .slider:before {
   @apply w-full max-w-[375px] h-[500px] 
   flex flex-col text-center items-center 
   shadow-lg rounded-xl bg-white mb-6
+  lg:mb-0
 }
 
 .light-card-name {
@@ -79,6 +80,7 @@ input:checked + .slider:before {
   flex flex-col text-center items-center 
   shadow-lg rounded-xl bg-gradient-to-r
   from-[#a3a8f0] to-[#696fdd] mb-6
+  lg:mb-0 lg:scale-110
 }
 
 .dark-card-name {
