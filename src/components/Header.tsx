@@ -1,9 +1,4 @@
-import { useContext } from "react";
-import { RateContext } from "../assets/context/RateContext";
-
 const Header = () => {
-
-  const rate = useContext(RateContext)
 
   return (
     <header className="px-4 py-12 w-full flex flex-col justify-center items-center lg:mt-8">
