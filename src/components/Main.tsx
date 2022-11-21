@@ -1,13 +1,19 @@
 import Card from "./Card"
-import { data } from '../assets/data/data';
+import { useContext } from "react";
+import { PlansContext } from "../assets/context/PlanContext";
+import { MonthlyContext } from "../assets/context/RateContext";
 
 const Main = () => {
+
+  const plans = useContext(PlansContext)
+  const monthly = useContext(MonthlyContext);
+
   return (
     <main className="px-4 py-8 flex flex-col items-center lg:flex-row lg:justify-center lg:mt-8">
-      {data.map((plan, index) => (
+      {plans.map((plan, index) => (
         <Card key={index}
               name={plan.name}
-              price={plan.price.annual}
+              price={monthly ? plan.price.monthly : plan.price.annual}
               size={plan.storageSize}
               users={plan.usersAllowed}
               maxSize={plan.maxSendSize}
