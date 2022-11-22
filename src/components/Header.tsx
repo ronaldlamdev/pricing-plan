@@ -1,10 +1,9 @@
-import { MonthlyContext } from "../assets/context/RateContext"
-import { useContext, useState } from "react"
+import { MonthlyContext } from "../App";
+import { useContext } from "react"
 
 const Header = () => {
 
-  const monthly = useContext(MonthlyContext);
-  const [monthlyRate, setMonthlyRate] = useState(monthly);
+  const {monthly, setMonthly} = useContext(MonthlyContext);
 
   return (
     <header className="px-4 py-12 w-full flex flex-col justify-center items-center lg:mt-8">
@@ -13,9 +12,9 @@ const Header = () => {
         <span className="text-[#b3b5c6]">Annually</span>
         <label className="relative w-[3.75rem] h-[2.125rem]">
           <input type="checkbox" className="opacity-0" />
-          <span onClick={() => setMonthlyRate(!monthlyRate)} className="slider"></span>
+          <span className="slider"></span>
         </label>
-        <span className="text-[#b3b5c6]">Monthly</span>
+        <span onClick={() => setMonthly(!monthly)} className="text-[#b3b5c6]">Monthly</span>
       </div>
     </header>
   )

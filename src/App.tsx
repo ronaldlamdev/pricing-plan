@@ -1,13 +1,21 @@
 import Header from './components/Header'
 import Main from './components/Main'
 import { PlansContext } from './assets/context/PlanContext'
-import { MonthlyContext } from './assets/context/RateContext'
 import { data } from './assets/data/data'
+import { useState, createContext } from 'react';
+
+export const MonthlyContext = createContext({
+  monthly: false,
+  setMonthly: (monthly:boolean) => {!monthly}
+})
 
 const App = () => {
+
+  const [monthly, setMonthly] = useState<boolean>(false);
+
   return (
     <PlansContext.Provider value={data}>
-    <MonthlyContext.Provider value={false}>
+    <MonthlyContext.Provider value={{monthly, setMonthly}}>
       <Header />
       <Main />
     </MonthlyContext.Provider>

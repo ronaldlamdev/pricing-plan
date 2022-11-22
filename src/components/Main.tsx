@@ -1,12 +1,12 @@
 import Card from "./Card"
 import { useContext } from "react";
 import { PlansContext } from "../assets/context/PlanContext";
-import { MonthlyContext } from "../assets/context/RateContext";
+import { MonthlyContext } from "../App";
 
 const Main = () => {
 
   const plans = useContext(PlansContext)
-  const monthly = useContext(MonthlyContext);
+  const {monthly} = useContext(MonthlyContext);
 
   return (
     <main className="px-4 py-8 flex flex-col items-center lg:flex-row lg:justify-center lg:mt-8">
