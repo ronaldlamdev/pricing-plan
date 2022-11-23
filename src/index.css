@@ -24,6 +24,14 @@ body {
   background-position: 195px -50px;
 }
 
+@media (min-width: 480px) {
+  body {
+    background: url('./assets/images/bg-top.svg') no-repeat, url('./assets/images/bg-bottom.svg') no-repeat;
+    background-color: #f6f6fe;
+    background-position: right top, left 770px;
+  }
+}
+
 /* The slider */
 .slider {
 
