@@ -1,17 +1,4 @@
-interface dataProp {
-  name: string,
-  price: string,
-  size: string,
-  users: string,
-  maxSize: string,
-  cardStyle: string,
-  nameStyle: string,
-  priceStyle: string,
-  detailsStyle: string,
-  buttonStyle: string
-}
-
-const Card = ({name, price, size, users, maxSize, cardStyle, nameStyle, priceStyle, detailsStyle, buttonStyle}: dataProp) => {
+const Card = ({name, price, size, users, maxSize, cardStyle, nameStyle, priceStyle, detailsStyle, buttonStyle}) => {
 
   return (
     <div className={cardStyle}>

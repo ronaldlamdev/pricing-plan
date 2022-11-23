@@ -1,11 +1,11 @@
 import Card from "./Card"
 import { useContext } from "react";
 import { PlansContext } from "../assets/context/PlanContext";
-import { MonthlyContext } from "../App";
+import { MonthlyContext } from "../assets/context/MonthlyContext";
 
 const Main = () => {
 
-  const plans = useContext(PlansContext)
+  const plans = useContext(PlansContext);
   const {monthly} = useContext(MonthlyContext);
 
   return (

@@ -1,5 +1,5 @@
-import { MonthlyContext } from "../App";
-import { useContext } from "react"
+import { MonthlyContext } from "../assets/context/MonthlyContext";
+import { useContext } from "react";
 
 const Header = () => {
 
@@ -12,9 +12,9 @@ const Header = () => {
         <span className="text-[#b3b5c6]">Annually</span>
         <label className="relative w-[3.75rem] h-[2.125rem]">
           <input type="checkbox" className="opacity-0" />
-          <span className="slider"></span>
+          <span onClick={() => setMonthly(!monthly)} className="slider"></span>
         </label>
-        <span onClick={() => setMonthly(!monthly)} className="text-[#b3b5c6]">Monthly</span>
+        <span className="text-[#b3b5c6]">Monthly</span>
       </div>
     </header>
   )
